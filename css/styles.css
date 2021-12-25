@@ -13,7 +13,6 @@ body {
   background-color: var(--background-primary-color);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  box-sizing: border-box;
 }
 
 /*------------- header section------------------- */
@@ -33,12 +32,13 @@ body {
   color: #000000;
   font-size: 26px;
   line-height: 1.2em;
+  padding-left: 215px;
+  margin-right: 50px;
 }
 
 .nav-list {
   display: flex;
   justify-content: center;
-  padding-left: 50px;
 }
 
 .blue-logo-part {
@@ -67,27 +67,45 @@ body {
 
 .nav {
   display: flex;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  align-items: center;
 }
 
 .nav-item {
-  padding-left: 50px;
+  margin-right: 50px;
 }
 
 .nav-link {
   text-decoration: none;
   color: #212121;
+  background-color: tomato;
+}
+.head-container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.secondary-nav-list {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.secondary-header-container {
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
 }
+.email-link {
+  margin-right: 50px;
+}
 
 .nav-tel-link {
   text-decoration: none;
   color: var(--primary-text-color);
+  padding-right: 215px;
 }
 
 /* -----------------------hero section---------------------------------- */
