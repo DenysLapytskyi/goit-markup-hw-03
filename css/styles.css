@@ -35,7 +35,10 @@ body {
   line-height: 1.2em;
 }
 
-.header-list {
+.nav-list {
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
 }
 
 .blue-logo-part {
@@ -62,6 +65,16 @@ body {
   padding-bottom: 94px;
 }
 
+.nav {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.nav-item {
+  padding-left: 50px;
+}
+
 .nav-link {
   text-decoration: none;
   color: #212121;
@@ -77,7 +90,7 @@ body {
   color: var(--primary-text-color);
 }
 
-/* hero section */
+/* -----------------------hero section---------------------------------- */
 
 .hero-section {
   text-align: center;
