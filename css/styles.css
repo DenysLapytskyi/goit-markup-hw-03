@@ -112,11 +112,11 @@ body {
 /* -----------------------hero section---------------------------------- */
 
 .hero-section {
-  text-align: center;
   background-color: var(--background-secondary-color);
-  padding: 200px 452px;
-  flex: grow 1;
-  outline: tomato dotted;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  width: 1600px;
 }
 
 .hero-container {
@@ -124,20 +124,17 @@ body {
   margin: 0 auto;
 }
 .hero-title {
-  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4em;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--links-buttons-text-color);
   background-color: #2f303a;
-  margin: auto;
   margin-bottom: 30px;
 }
 
-.button {
+.hero-button {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -163,10 +160,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   display: flex;
-}
-
-.advantages-section {
-  outline: tomato dotted;
 }
 
 .advanteges-list {
@@ -198,6 +191,19 @@ body {
   text-align: left;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*----------------------------------Examples section--------------------------- */
 
 .examples-container {
@@ -206,7 +212,6 @@ body {
 }
 
 .examples-section {
-  outline: tomato dotted;
 }
 .examples-title {
   font-weight: 700;
@@ -409,21 +414,21 @@ body {
   padding-bottom: 20px;
 }
 
-.works-img {
-  display: block;
-}
-
 .works-list {
   display: flex;
   flex-wrap: wrap;
-  text-align: left;
-  margin-right: -30px;
-  margin-bottom: -30px;
 }
 
 .works-item {
-  border: 1px solid #eeeeee;
-  flex-basis: calc((100% - 30px) / 9);
+  outline: 1px solid #eeeeee;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.works-item:nth-child(3n + 3) {
+  margin-right: 0px;
+}
+
+.works-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
