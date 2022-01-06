@@ -35,6 +35,10 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+img {
+  display: block;
+}
 /*------------- header section------------------- */
 
 .header {
@@ -46,7 +50,7 @@ body {
 }
 
 .header-logo {
-  display: inline-block;
+  display: block;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   color: #000000;
@@ -92,6 +96,19 @@ body {
   margin-left: 50px;
 }
 
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-email-icon {
+  margin-right: 10px;
+}
+
+.nav-email-icon::before {
+  margin-right: 10px;
+}
+
 .nav-link {
   text-decoration: none;
   color: #212121;
@@ -102,7 +119,7 @@ body {
   color: var(--accent-color);
 }
 
-.nav-tel-link {
+.contacts-link {
   text-decoration: none;
   color: var(--primary-text-color);
   padding-bottom: 32px;
@@ -249,7 +266,7 @@ body {
   line-height: 1.2em;
   text-align: center;
   color: var(--secondary-text-color);
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .team-title-list {
@@ -257,9 +274,11 @@ body {
 }
 
 .team-item {
+  background-color: var(--background-primary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  line-height: 19px;
   margin: left 30px;
   text-align: center;
   padding-bottom: 30px;
@@ -300,11 +319,12 @@ body {
 }
 
 .footer-logo {
-  display: block;
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   font-size: 26px;
-  line-height: 1.2em;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
   margin-bottom: 20px;
 }
@@ -318,10 +338,13 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7em;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
 .footer-address-link {
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.7em;
   letter-spacing: 0.03em;
@@ -331,6 +354,10 @@ body {
 
 .footer-item {
   margin-bottom: 9px;
+}
+
+.footer-item:last-child {
+  margin-bottom: 0px;
 }
 
 .footer-link {
@@ -348,7 +375,7 @@ body {
 
 /* ---------------------PORTFOLIO PAGE--------------------------- */
 
-/* -----------------butttons section------------------ */
+/* -----------------buttons section------------------ */
 
 .buttons-section {
   padding-bottom: 0;
@@ -393,7 +420,7 @@ body {
 
 /* ----------------Works Section------------------------ */
 .works-section {
-  padding-top: 34px;
+  padding-top: 50px;
 }
 
 .works-title {
